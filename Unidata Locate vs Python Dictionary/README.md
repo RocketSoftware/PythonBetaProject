@@ -82,7 +82,7 @@ Time: 16240ms  or  20.24s
 
 Repeat this process by changing the "key". Examples: Key= Gender+State, Specialty, Grad Year, etc
 
-## Resultere
+## Results
 
 The results were obvious as seen on the graph (LocateVsDictionary.png):
 Python dictionaries consistently took about the same time to manipulate and count the sets. The time it took was between 30 to 40 seconds disregarding the amount of categories that the sets broke into.
