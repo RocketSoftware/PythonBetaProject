@@ -29,9 +29,10 @@ Import the file into the Unidata table: PHYSICIAN
 
 ## Usage
 
-The are two program provided:
-Unidata:  BP COUNT.PHYSICIAN
-Python:  u2_physician.py
+There are two programs provided:
+
+* Unidata:  BP COUNT.PHYSICIAN
+* Python:  u2_physician.py
 
 Run each program multiple times changing the "key" to create different breakdowns.
 
@@ -83,9 +84,9 @@ Repeat this process by changing the "key". Examples: Key= Gender+State, Specialt
 
 ## Results
 
-The results were obvious as seen on the graph (CPU_compare_every_10min.png):
-Python dictionaries are consistently took about the same time to manipulate and count the sets. The time it took was between 30 to 40 seconds disregarding the amount of categories that the sets broke into.
-Unidata's Locate produce better results as long as the number of categories was below 400. When the categories increased, the Locate function performed badly.
+The results were obvious as seen on the graph (LocateVsDictionary.png):
+Python dictionaries consistently took about the same time to manipulate and count the sets. The time it took was between 30 to 40 seconds disregarding the amount of categories that the sets broke into.
+Unidata's Locate produce better results as long as the number of categories were below 400. When the categories increased, the Locate function performed badly.
 
 ## Conclusion
 
