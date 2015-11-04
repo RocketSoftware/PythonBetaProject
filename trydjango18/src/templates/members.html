@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value ="Search" name="search"
+               {% if searchdisabled %}
+                    disabled
+               {% endif %}
+                >
+        <input type="submit" value="Update" name = "update"
+               {% if not update %}
+                    disabled
+               {% endif %}
+                >
+        <input type="submit" value="Bank Detail" name = "bankdetail"
+               {% if not bankenabled %}
+                    disabled
+               {% endif %}
+                >
+    </form>
+    <h2>{{ message }}</h2>
+</body>
+</html>
